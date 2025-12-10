@@ -13,7 +13,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/mrmikhailv/ftdi"
+	"github.com/esoutham-lvt/ftdi"
 	"github.com/ziutek/lcd/hdc"
 )
 

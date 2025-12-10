@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mrmikhailv/ftdi/ftn"
+	"github.com/esoutham-lvt/ftdi/ftn"
 )
 
 func checkErr(err error) {

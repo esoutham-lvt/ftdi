@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/mrmikhailv/ftdi"
+	"github.com/esoutham-lvt/ftdi"
 )
 
 func errorExit(err error) {
