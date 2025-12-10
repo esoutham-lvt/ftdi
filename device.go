@@ -316,6 +316,7 @@ func (d *Device) Close() error {
 
 func makeDevice(c Channel) (*Device, error) {
 	ctx, err := C.ftdi_new()
+	ctx.module_detach_mode = C.AUTO_DETACH_REATACH_SIO_MODULE
 	if ctx == nil {
 		return nil, err
 	}
