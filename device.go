@@ -316,7 +316,7 @@ func (d *Device) Close() error {
 
 func makeDevice(c Channel) (*Device, error) {
 	ctx, err := C.ftdi_new()
-	ctx.module_detach_mode = C.AUTO_DETACH_REATACH_SIO_MODULE
+	ctx.module_detach_mode = C.AUTO_DETACH_REATACH_SIO_MODULE // Auto detach and reattach kernel in linux Available in libftdi >= 1.5.0
 	if ctx == nil {
 		return nil, err
 	}
